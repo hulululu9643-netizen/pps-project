@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Culture - Jharkhand</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <div class="logo"><img src="images/logo.png" class="logo-img" alt="logo"/><span class="brand">Jharkhand</span></div>
+      <nav class="main-nav" id="mainNav"><a href="index.html">Home</a><a href="tourism.html">Tourism</a><a href="culture.html" class="active">Culture</a></nav>
+      <button class="hamburger" id="hamburger" aria-label="menu"><span></span><span></span><span></span></button>
+    </div>
+  </header>
+
+  <section class="page-hero" style="background-image:url('images/jharkhand2.jpg')">
+    <div class="hero-overlay"></div>
+    <div class="wrap"><h1>Culture & Festivals</h1><p>Experience tribal traditions and folk arts</p></div>
+  </section>
+
+  <section class="highlights wrap">
+    <div class="cards">
+      <article class="card"><img src="images/sarhul.jpg" alt="Sarhul"><div class="card-body"><h3>Sarhul</h3><p>Spring festival, nature worship.</p></div></article>
+      <article class="card"><img src="images/karma.jpg" alt="Karma"><div class="card-body"><h3>Karma</h3><p>Harvest festival with music & dance.</p></div></article>
+      <article class="card"><img src="images/tusu.jpg" alt="Tusu"><div class="card-body"><h3>Tusu</h3><p>Folk songs & celebrations.</p></div></article>
+    </div>
+  </section>
+
+  <footer class="site-footer"><div class="footer-bg" style="background-image: url('images/footer-sunset.jpg')"></div><div class="wrap footer-content"><div class="footer-bottom"><p>© 2025 Jharkhand Tourism</p></div></div></footer>
+
+  <script>
+    const ham = document.getElementById('hamburger');
+    const nav = document.getElementById('mainNav');
+    ham.addEventListener('click', () => { nav.classList.toggle('open'); ham.classList.toggle('active'); });
+  </script>
+</body>
+</html>
